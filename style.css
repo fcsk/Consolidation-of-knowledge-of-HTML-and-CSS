@@ -15,6 +15,8 @@ html {
 
 .darkgreen {color:#0A323C}
 
+.aquawhite {color: #bae2e2}
+
 h1 { 
     font-size:4rem; 
     background-color: rgba(239, 229, 209, .9);
@@ -22,6 +24,7 @@ h1 {
     margin: 4rem;
     display: inline-block;
     border-top-left-radius:2.2rem ;
+    border-top-right-radius:2.2rem ;
  }
 
 h2 { font-size: 2.7rem; padding: 3.5rem ;width: 93%; }
@@ -45,7 +48,7 @@ h3, h2 {
     
 }
 
-p { font-size: 1.8rem; line-height: 1.55 ; }
+p { font-size: 1.8rem; line-height: 1.55 ; color:rgb(239, 229, 209) }
  
 ul { font-size: 1.8rem; line-height: 1.75 ; }
 
@@ -94,10 +97,16 @@ em {
 }
 
 .menu {
-    background: url(assets/icon.svg) right no-repeat;
+    background: rgba(239, 229, 209, .9) url(assets/icon.svg) center no-repeat;
+    border-radius: 25%;
+    padding: 0.5rem;
     margin: 1rem;
     height: 3.2rem;
-    display: block;
+    position: fixed;
+    width:3.2rem;
+    right:0;
+    z-index: 9999;
+
 }
 
 header { display: none; }
@@ -114,6 +123,13 @@ section {
 
 article {
     margin-bottom: 11rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
 }
 
 hgroup {
@@ -138,3 +154,77 @@ figure {
     padding-top:4rem;
     column-count: 2;
 }
+
+
+@media all and (max-width: 1300px) {
+    html {
+        background: #005A81;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .bg {
+        background: #005A81 url(assets/bg.png) fixed no-repeat;
+        height: 300px;
+    }
+
+    .menu {
+        background-color: #3d6570;
+    }
+}
+
+
+
+@media all and (max-width: 1080px) {
+    html {
+        background: #005A81;
+    }
+
+    section {
+        width: 90%;
+        min-width:300px;
+        right: 5%;
+    }
+
+    .bg {
+        background: #005A81 url(assets/bg.png) fixed no-repeat;
+        height: 300px;
+    }
+
+    .menu {
+        background-color: #3d6570;
+    }
+    }
+
+    
+
+
+@media all and (max-width: 768px) {
+    hgroup {
+        margin-left: 0;
+        
+    }
+    figure {
+        display: none;
+    }
+
+    .bg {
+        background: #005A81 url(assets/bg1.png) fixed no-repeat;
+        height: 250px;
+    }
+
+
+    section {
+    
+        width: 90%;
+        min-width:300px;
+        right: 5%;
+    }
+
+    .tekst {
+        column-count: 1;
+    }
+}
+
