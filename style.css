@@ -48,6 +48,11 @@ h3, h2 {
     
 }
 
+h4 {
+    font-size: 2rem;
+    padding: 2rem 1rem;
+}
+
 p { font-size: 1.8rem; line-height: 1.55 ; color:rgb(239, 229, 209) }
  
 ul { font-size: 1.8rem; line-height: 1.75 ; }
@@ -97,6 +102,7 @@ em {
 }
 
 .menu {
+    
     background: rgba(239, 229, 209, .9) url(assets/icon.svg) center no-repeat;
     border-radius: 25%;
     padding: 0.5rem;
@@ -109,7 +115,61 @@ em {
 
 }
 
-header { display: none; }
+.hoverme:hover  header,
+.hoverme:active header,
+.hoverme:focus  header {
+    display: block;
+}
+
+header { 
+    display: none;
+    background:#c7a96e;
+    color:#efe5d1;
+    height:30rem;
+    padding:10rem;
+    
+
+}
+
+nav {
+    float: right;
+    
+}
+
+nav li {
+    text-align: right;
+    font-size: 2.2rem;
+    
+}
+
+form {
+    float: left;
+    width: 35rem;
+}
+
+input, textarea {
+    width: 35rem;
+    background: none;
+    border:2px #d3d3d4 solid;
+    margin: 0.7rem;
+    color:#efe5d1;
+    font-size: 1.8rem;
+    
+}
+
+button {
+    background-color: #005a81;
+    color:antiquewhite;
+    border:none;
+    padding: 2rem 6rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: -2rem;
+
+}
 
 
 section {
